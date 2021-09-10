@@ -1,13 +1,184 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #ececec;
+    position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header h1{
+
+  margin-left:10px;
+}
+.header a{
+
+  color: #000;
+}
+.navbar {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+.navbar-links li {
+    margin-left: 20px;
+    font-size: 18px;
+
+}
+.landing {
+    width: 100%;
+    height: 92vh;
+    background-color: #ECECEC;
+    position: relative;
+}
+.landing-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    /* Working with flex parent element will flex which will align child elements */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.landing h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.button-group {
+    margin-top: 20px;
+}
+.button-group a{
+ text-decoration: none;
+}
+.button-group button {
+    box-sizing: border-box;
+    width: 100px;
+    padding: 10px;
+    margin-left:5px;
+    border:1px solid silver;
+    border-radius: 50px;
+
+}
+.user-registeration-div  {
+
+  width: 50%;
+  margin: auto;
+  padding-top: 50px;
+  height:92vh;
+
+}
+
+
+.user-registeration-div div {
+
+  margin-bottom: 20px;
+  padding: 10px 0 10px 10px;
+}
+.user-registeration-div label {
+
+  font-size: 12px;
+  font-weight: bold;
+}
+.user-registeration-div input {
+
+  margin-top: 5px;
+  padding: 2px;
+  width: 80%;
+  height:25px;
+  border-radius: 20px;
+  border: 2px solid #ececec;
+}
+.user-registeration-div form {
+
+  width: 70%;
+  margin: auto;
+}
+.user-registeration-div button {
+  box-sizing: border-box;
+  width: 100px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #ececec;
+  font-weight: bold;
+
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+.table-container{
+  width: 80%;
+  margin:auto;
+  padding:50px
+}
+.table-container h2{
+
+  margin-bottom: 20px;
+}
+.alert-danger{
+  width:40%;
+  margin: 10px auto;
+}
+
+.create-todo{
+
+  width: 50%;
+  margin: auto;
+  padding-top: 50px;
+  height:92vh;
+}
+
+.create-todo div {
+
+  margin-bottom: 20px;
+  padding: 10px 0 10px 10px;
+}
+.create-todo label {
+
+  font-size: 12px;
+  font-weight: bold;
+}
+.create-todo input {
+
+  margin-top: 5px;
+  padding: 2px;
+  width: 80%;
+  height:25px;
+  border-radius: 20px;
+  border: 2px solid #ececec;
+}
+.create-todo  textarea{
+
+  margin-top: 5px;
+  padding:5px;
+  width: 80%;
+  height:50px;
+  border-radius: 20px;
+  border: 2px solid #ececec;
+}
+.create-todo form {
+
+  width: 70%;
+  margin: auto;
+}
+.create-todo button {
+  box-sizing: border-box;
+  width: 100px;
+  padding: 10px;
+  margin-left:5px;
+  border-radius: 50px;
+  border: 1px solid #ececec;
+  font-weight: bold;
+
 }
